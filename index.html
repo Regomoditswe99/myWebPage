@@ -1,87 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Regomoditswe Kgatshe</title>
-</head>
-<body>
-    <div class="container">
-        <div class="hero">
-            <header>
-                
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#home">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#experience">Experience</a>
-                            <a href="#services">Services</a>
-                            <a href="#contact">Contact</a>
-                            
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="hero-text">
-                <h5>Hello! I am</h5>
-                <h1>Regomoditswe Kgatshe</h1>
-                <h5>I am a web developer</h5>
-            </div>
-            
-
-            </div>
-        </div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regomoditswe's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header>
+        <nav class="nav">
+          <a href="/" class="logo"> <span class="highlighted"> R</span>egomoditswe</a>
+  
+          <div class="nav-links">
+            <a href="#home" class="nav-item nav-item-active">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#services" class="nav-item">Services</a>
+            <a href="#projects" class="nav-item">projects</a>
+            <a href="#contact" class="nav-item">contact</a>
+          </div>
+  
+          <div class="toggler">
+            <span class="line"></span><span class="line"></span
+            ><span class="line"></span>
+          </div>
+        </nav>
+      </header>
+      <section class="hero container" id="home">
+        <div class="hero-info">
+         <h1 class="title">Regomoditswe <span class="highlighted">Kgatshe</span></h1>
+         <p class="hero-description">Web developer based in Johannesburg, South Africa.</p>
+         <a href="#services" class="btn hero-btn">Services</a>
+       </div>
+ 
+       <div class="hero-img">
+         <img src= "Images/image1.jpg">
+       </div>
+  </section>
+  <section class="about container" id="about">
+    <div class="about-img">
+      <img src= "Images/image2.jpg">
     </div>
-    <div class="aboutimage">
-        <div class="image">
-            <img src="Images/image3.jpg">
+
+    <div class="about-info">
+      <h2 class="secondery-title">About Me</h2>
+
+      <p class="description">
+        Highly motivated and detail-oriented web developer with over 5 years of experience
+        in developing responsive websites and applications. Proficient in HTML, CSS, JavaScript
+        and jQuery, with a strong understanding of web design principles.
+      </p>
+
+      <p class="description">
+        I am a hard-working and driven individual who isn't afraid to face a challenge. 
+        I'm passionate about my work and I know how to get the job done. I would describe
+        myself as an open and honest person who doesn't believe in misleading other people 
+        and tries to be fair in everything I do.
+      </p>
+
+      <p class="description">
+        I have a steady source of motivation that drives me to do my best. In my last job,
+        this passion led me to challenge myself daily and learn new skills that helped me
+        to do better work. For example, I taught myself a new programming language. 
+        I soon became the go-to person for any design.
+      </p>
+
+      <a href="#" class="btn btn-secondery">More</a>
+    </div>
+  </section>
+  <div class="services container" id="services">
+    <div class="services-header">
+      <h2 class="secondery-title">Services</h2>
+    </div>
+
+    <div class="grid services-grid">
+      <div class="grid-item services-item">
+        <i class="fa-solid fa-computer"></i>
+        <h3>Website Design</h3>
+        <p class="description">
+        Designing and building the interface, navigation and aesthetic of websites.
+        </p>
+      </div>
+      <div class="grid-item services-item">
+        <i class="fa-solid fa-meteor"></i>
+
+        <h3>SEO & Marketing</h3>
+        <p class="description">
+        Identify strategies, techniques and tactics to increase the number of visitors
+        to a website and obtain a high-ranking placement in the results page of search 
+        engines. 
+        </p>
+      </div>
+      <div class="grid-item services-item">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h3>UI/UX Design</h3>
+        <p class="description">
+        Create the user interface for an app, website, or other interactive media.
+        </p>
+      </div>
+    </div>
+  </div>
+  <section class="projects container" id="projects">
+    <div class="projects-header">
+      <h2 class="secondery-title">Projects</h2>
+
+      <div class="projects-tab">
+        <button class="projects-tab-btn projects-tab-btn-active" id="all">
+          All
+        </button>
+        <button class="projects-tab-btn" id="design">Design</button>
+        <button class="projects-tab-btn" id="seo">SEO</button>
+        <button class="projects-tab-btn" id="ui-ux">UI/UX</button>
+      </div>
+    </div>
+
+    <div class="grid projects-grid">
+      <div class="grid-item projects-item all design">
+        <img src="Images/project1.jpg">
+      </div>
+      <div class="grid-item projects-item all design">
+        <img src="Images/project2.jpg">
+      </div>
+      <div class="grid-item projects-item all seo">
+        <img src="Images/project3.jpg">
+      </div>
+      <div class="grid-item projects-item all seo">
+        <img src="Images/project4.jpg">
+      </div>
+      <div class="grid-item projects-item all ui-ux">
+        <img src="Images/project5.jpg">
+      </div>
+      <div class="grid-item projects-item all ui-ux">
+        <img src="Images/project6.jpg">
+      </div>
+    </div>
+  </section>
+  <section class="container contact" id="contact">
+    <div class="contact-info">
+      <h2 class="secondery-title">Contact</h2>
+      <div class="info-container">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="contact-info-data">
+            <h3>Address</h3>
+            <p>Johannesburg, South Africa</p>
+          </div>
         </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-info-data">
+            <h3>Email</h3>
+            <p>rvinolia65@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <div class="contact-info-data">
+            <h3>Phone</h3>
+            <p>0636414430</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email" />
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+        <button class="btn submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <div class="about">
-    <section id="about">
-        <h2>About</h2>
-        <p>I am Regomoditswe Kgatshe, a young an passionate web developer based in Johannesburg, South Africa.<br>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to<br> the success of the overall product. Check out some of my work in the Projects section.</p>
-        <br>
-        <p>I also like sharing content related to the stuff that I have learned over the<br> years in Web Development so it can help other people of the Dev<br> Community. Feel free to Connect or Follow me on my socials under the contact section<br>. where I post useful content related to Web Development and Programming</p>
-        <br>
-        <p>I'm open to Job opportunities where I can contribute, learn and grow. If<br> you have a good opportunity that matches my skills and experience then<br> don't hesitate to contact me.</p>
-    </section>
-</div>
+      <footer class="footer">
+    <p>&copy; 2023 Regomoditswe Kgatshe All Right Reserved</p>
+  </footer>
 
-</div>
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>Senior Web Developer<br><b>BBD</b><br>2016-2023<br>Managed WordPress development and custom theme creation.</p>
-        <ul>
-            <li>Managed multiplelarge-scale projects,deliveruing all on time and within budget.</li>
-            <li>Used WordPress, Elememntor and other plugins to buil and edit custom themes.</li>
-            <li>Collaborated with a team of developers, contributing to a 20% increase in team productibity.</li>
-        </ul>
-        <br>
-        <p>Web Development Intern<br><b>CODE GUYS</b><br>2013-2015<br>Gained pratical experience in back-end development.</p>
-        <ul>
 
-            <li>Developed and mainted code for 10 client websites primarily using HTML, CSS and Javascript.</li>
-            <li>Collaborated with a team of developers, gaining valuable teamwork experience.</li>
-            <li>Worked on API intergration and developed functionality for systems using APIs</li>
-        </ul>
-    </section>
-    <section id="services">
-        <h2>Services</h2>
-        <p>I offer the following services:</p>
-        <ul>
-            <li>Delivering websites and web apps</li>
-            <li>Cybersecurity solutions</li>
-            <li>eCommerce solutions</li>
-            <li>Website architectures</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p></p>
-    </section>
-</body>
+        <script src="./script.js"></script>
+  </body>
 </html>
+   
+          
